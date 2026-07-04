@@ -11,7 +11,7 @@ Password: 123456
 ## Features
 
 - User Authentication
-- Admin Dashboard
+- User Dashboard
 - Product Listing
 - Product Details
 - Cart
@@ -34,5 +34,5 @@ Password: 123456
 - Express.js
 - MongoDB
 - JWT Authentication
-
-- 
+-Multer files upload
+- cloudnary image save
