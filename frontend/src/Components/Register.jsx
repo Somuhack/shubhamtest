@@ -61,7 +61,7 @@ const Register = () => {
       
 
       const response = await axios.post(
-        "http://localhost:5000/api/exam/auth/register", data,
+        `${import.meta.env.VITE_API_URL}/api/exam/auth/register`, data,
         {
           headers: {
             "Content-Type": "multipart/form-data"

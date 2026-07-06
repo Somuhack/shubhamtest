@@ -26,7 +26,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/exam/auth/admin/users",
+        `${import.meta.env.VITE_API_URL}/api/exam/auth/admin/users`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -65,7 +65,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem("token");
 
       await axios.delete(
-        `http://localhost:5000/api/exam/auth/admin/users/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/exam/auth/admin/users/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -99,7 +99,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:5000/api/exam/auth/admin/users/${editingUser}`,
+        `${import.meta.env.VITE_API_URL}/api/exam/auth/admin/users/${editingUser}`,
         formData,
         {
           headers: {

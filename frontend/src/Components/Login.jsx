@@ -48,7 +48,7 @@ const Login = () => {
     setErrors({});
 
     const response = await axios.post(
-      "http://localhost:5000/api/exam/auth/login",
+      `${import.meta.env.VITE_API_URL}/api/exam/auth/login`,
       formData
     );
 
